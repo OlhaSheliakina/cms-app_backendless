@@ -2,6 +2,7 @@ import 'bulma/css/bulma.css';
 import React, { useEffect, useState } from 'react';
 import Navigation from './components/Navigation';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import Home from './tabs/Home';
 
 const App = () => {
   const [tabs, setTabs] = useState([]);
@@ -26,7 +27,7 @@ const App = () => {
       <main>
         <div>
           <Routes>
-            <Route path='/home' element={<h1 className='title'>Home Page</h1>} />
+            <Route path='/home' element={<Home />} />
             <Route index element={<Navigate to='/home' replace />} />
             {tabs.map((tab) => (
               <Route
