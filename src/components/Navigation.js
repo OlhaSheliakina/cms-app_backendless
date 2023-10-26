@@ -6,14 +6,19 @@ import classNames from 'classnames';
 const getLinkClass = ({ isActive }) =>
   classNames('navbar-item', { 'is-active': isActive });
 
-const Navigation = () => {
+const Navigation = ({ tabs }) => {
   return (
     <nav className='navbar is-dark is-fixed-top has-shadow'>
       <div className='container'>
         <div className='navbar-brand'>
-          <NavLink to='/' className={getLinkClass}>Home</NavLink>
-          <NavLink to='/tab1' className={getLinkClass}>Tab1</NavLink>
-          <NavLink to='/tab2' className={getLinkClass}>Tab2</NavLink>
+          <NavLink to='/' className={getLinkClass}>
+            Home
+          </NavLink>
+          {tabs.map((tab) => (
+            <NavLink key={tab.id} to={`${tab.id}`} className={getLinkClass}>
+              {tab.title}
+            </NavLink>
+          ))}
         </div>
       </div>
     </nav>
