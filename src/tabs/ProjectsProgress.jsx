@@ -8,7 +8,7 @@ const ProjectsProgress = () => {
   const [projectsData, setProjectsData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/data/projectsData.json')
+    fetch('https://olhasheliakina.github.io/cms-app_backendless/data/projectsData.json')
       .then((response) => response.json())
       .then((data) => {
         setProjectsData(data.projectsProgress);

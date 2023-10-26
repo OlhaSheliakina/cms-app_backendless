@@ -14,7 +14,7 @@ const App = () => {
   const [tabs, setTabs] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/data/tabsData.json')
+    fetch('https://olhasheliakina.github.io/cms-app_backendless/data/tabsData.json')
       .then((response) => response.json())
       .then((data) => {
         setTabs(data);
@@ -32,9 +32,7 @@ const App = () => {
 
       <main>
         <div>
-          <Suspense
-            fallback={<Loader />}
-          >
+          <Suspense fallback={<Loader />}>
             <Routes>
               <Route path='/home' element={<Home />} />
               <Route index element={<Navigate to='/home' replace />} />
