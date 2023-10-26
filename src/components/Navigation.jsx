@@ -12,11 +12,21 @@ const Navigation = ({ tabs }) => {
       <div className='container'>
         <div className='navbar-brand'>
           <NavLink to='/' className={getLinkClass}>
-            Home
+          <span className='icon-text'>
+                <span className='icon'>
+                  <i className='fas fa-home'></i>
+                </span>
+                <span>Home</span>
+              </span>
           </NavLink>
           {tabs.map((tab) => (
             <NavLink key={tab.id} to={`${tab.id}`} className={getLinkClass}>
-              {tab.title}
+              <span className='icon-text'>
+                <span className='icon'>
+                  <i className={tab.icon}></i>
+                </span>
+                <span>{tab.title}</span>
+              </span>
             </NavLink>
           ))}
         </div>
