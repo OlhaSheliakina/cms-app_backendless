@@ -1,0 +1,23 @@
+[
+  {
+    "id": "projectsInfo",
+    "title": "Projects Information",
+    "order": 0,
+    "path": "./tabs/ProjectsInfo.jsx",
+    "icon": "fas fa-table"
+  },
+  {
+    "id": "projectsTasks",
+    "title": "Projects Tasks",
+    "order": 1,
+    "path": "./tabs/ProjectsTasks.jsx",
+    "icon": "fas fa-list-ul"
+  },
+  {
+    "id": "projectsProgress",
+    "title": "Projects Progress",
+    "order": 2,
+    "path": "./tabs/ProjectsProgress.jsx",
+    "icon": "fas fa-chart-pie"
+  }
+]
