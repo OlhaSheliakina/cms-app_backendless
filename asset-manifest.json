@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cms-app/static/css/main.0613a5b9.css",
-    "main.js": "/cms-app/static/js/main.336f9407.js",
-    "static/js/511.16ee6142.chunk.js": "/cms-app/static/js/511.16ee6142.chunk.js",
-    "static/js/505.d2faf764.chunk.js": "/cms-app/static/js/505.d2faf764.chunk.js",
-    "static/js/580.56eb941a.chunk.js": "/cms-app/static/js/580.56eb941a.chunk.js",
-    "static/js/77.ccd62aaa.chunk.js": "/cms-app/static/js/77.ccd62aaa.chunk.js",
-    "index.html": "/cms-app/index.html",
-    "main.0613a5b9.css.map": "/cms-app/static/css/main.0613a5b9.css.map",
-    "main.336f9407.js.map": "/cms-app/static/js/main.336f9407.js.map",
-    "511.16ee6142.chunk.js.map": "/cms-app/static/js/511.16ee6142.chunk.js.map",
-    "505.d2faf764.chunk.js.map": "/cms-app/static/js/505.d2faf764.chunk.js.map",
-    "580.56eb941a.chunk.js.map": "/cms-app/static/js/580.56eb941a.chunk.js.map",
-    "77.ccd62aaa.chunk.js.map": "/cms-app/static/js/77.ccd62aaa.chunk.js.map"
+    "main.css": "/cms-app_backendless/static/css/main.25878578.css",
+    "main.js": "/cms-app_backendless/static/js/main.b049be71.js",
+    "static/js/511.86e7cdec.chunk.js": "/cms-app_backendless/static/js/511.86e7cdec.chunk.js",
+    "static/js/505.b3eef5fa.chunk.js": "/cms-app_backendless/static/js/505.b3eef5fa.chunk.js",
+    "static/js/580.9e2b456c.chunk.js": "/cms-app_backendless/static/js/580.9e2b456c.chunk.js",
+    "static/js/77.ccd62aaa.chunk.js": "/cms-app_backendless/static/js/77.ccd62aaa.chunk.js",
+    "index.html": "/cms-app_backendless/index.html",
+    "main.25878578.css.map": "/cms-app_backendless/static/css/main.25878578.css.map",
+    "main.b049be71.js.map": "/cms-app_backendless/static/js/main.b049be71.js.map",
+    "511.86e7cdec.chunk.js.map": "/cms-app_backendless/static/js/511.86e7cdec.chunk.js.map",
+    "505.b3eef5fa.chunk.js.map": "/cms-app_backendless/static/js/505.b3eef5fa.chunk.js.map",
+    "580.9e2b456c.chunk.js.map": "/cms-app_backendless/static/js/580.9e2b456c.chunk.js.map",
+    "77.ccd62aaa.chunk.js.map": "/cms-app_backendless/static/js/77.ccd62aaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0613a5b9.css",
-    "static/js/main.336f9407.js"
+    "static/css/main.25878578.css",
+    "static/js/main.b049be71.js"
   ]
 }
