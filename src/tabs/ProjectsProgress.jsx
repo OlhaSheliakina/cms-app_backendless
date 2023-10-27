@@ -8,7 +8,9 @@ const ProjectsProgress = () => {
   const [projectsData, setProjectsData] = useState([]);
 
   useEffect(() => {
-    fetch('https://olhasheliakina.github.io/cms-app_backendless/data/projectsData.json')
+    fetch(
+      'https://olhasheliakina.github.io/cms-app_backendless/data/projectsData.json'
+    )
       .then((response) => response.json())
       .then((data) => {
         setProjectsData(data.projectsProgress);
@@ -40,9 +42,10 @@ const ProjectsProgress = () => {
   };
 
   return (
-    <section className='section is-medium mt-6'>
-       <div style={{ height: '400px'}}>
-      <Pie data={pieChartData} options={{ maintainAspectRatio: false }} />
+    <section className='section is-medium has-text-centered'>
+      <h3 className='title'>Projects Progress</h3>
+      <div style={{ height: '380px' }}>
+        <Pie data={pieChartData} options={{ maintainAspectRatio: false }} />
       </div>
     </section>
   );

@@ -15,7 +15,8 @@ const ProjectsTasks = () => {
       });
   }, []);
   return (
-    <section className='section is-medium mt-6'>
+    <section className='section is-medium'>
+      <h3 className='title has-text-centered'>Projects Tasks</h3>
       <ol>
         {projectsData.map((project) => (
           <div

@@ -28,8 +28,9 @@ const ProjectsInfo = () => {
   };
 
   return (
-    <section className='section is-medium has-text-centered mt-6'>
-      <div className='table-container'>
+    <section className='section is-medium has-text-centered'>
+      <h3 className='title'>Projects Information</h3>
+      <div className='table-container pt-6'>
         <table className='table is-fullwidth'>
           <thead>
             <tr>
