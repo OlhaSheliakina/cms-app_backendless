@@ -15,7 +15,7 @@ const ProjectsTasks = () => {
       });
   }, []);
   return (
-    <section className='section is-medium'>
+    <section className='section is-medium mt-6'>
       <ol>
         {projectsData.map((project) => (
           <div

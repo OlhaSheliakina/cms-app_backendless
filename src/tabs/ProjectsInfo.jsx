@@ -28,7 +28,7 @@ const ProjectsInfo = () => {
   };
 
   return (
-    <section className='section is-medium has-text-centered'>
+    <section className='section is-medium has-text-centered mt-6'>
       <div className='table-container'>
         <table className='table is-fullwidth'>
           <thead>
