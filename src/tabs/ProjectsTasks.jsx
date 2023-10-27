@@ -20,7 +20,7 @@ const ProjectsTasks = () => {
         {projectsData.map((project) => (
           <div
             key={project.id}
-            className={classNames({
+            className={classNames('has-text-dark',{
               'has-text-success': project.status === 'Completed',
               'has-background-warning': project.status === 'In Progress',
             })}

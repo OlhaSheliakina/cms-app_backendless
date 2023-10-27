@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from './tabs/Home';
 import Loader from './components/Loader';
+import NotFoundPage from './pages/NotFoundPage';
 
 function renderLazyComponent(path) {
   const LazyComponent = lazy(() => import(`${path}`));
@@ -14,7 +15,9 @@ const App = () => {
   const [tabs, setTabs] = useState([]);
 
   useEffect(() => {
-    fetch('https://olhasheliakina.github.io/cms-app_backendless/data/tabsData.json')
+    fetch(
+      'https://olhasheliakina.github.io/cms-app_backendless/data/tabsData.json'
+    )
       .then((response) => response.json())
       .then((data) => {
         setTabs(data);
@@ -30,8 +33,8 @@ const App = () => {
         <Navigation tabs={tabs} />
       </header>
 
-      <main>
-        <div>
+      <main className='has-text-grey-lighter'>
+        <div style={{ height:'81vh'}}>
           <Suspense fallback={<Loader />}>
             <Routes>
               <Route path='/home' element={<Home />} />
@@ -46,15 +49,19 @@ const App = () => {
               <Route
                 path='*'
                 element={
-                  <h1 className='title has-text-centered m-6'>
-                    Page was not found
-                  </h1>
+                 <NotFoundPage />
                 }
               />
             </Routes>
           </Suspense>
         </div>
       </main>
+
+      <footer className='footer has-background-dark is-bottom is-fixed py-6'>
+        <div className='content has-text-centered is-medium has-text-light'>
+          <p>&copy; Company Name</p>
+        </div>
+      </footer>
     </div>
   );
 };
