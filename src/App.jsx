@@ -6,21 +6,17 @@ import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import TabsPage from './pages/TabsPage';
 import Footer from './components/Footer';
+import { getData } from './utils/fetch';
 
 const App = () => {
   const [tabs, setTabs] = useState([]);
 
   useEffect(() => {
-    fetch(
-      'https://olhasheliakina.github.io/cms-app_backendless/data/tabsData.json'
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setTabs(data);
-      })
-      .catch((error) => {
-        console.error('Error has occured while fetching data:', error);
-      });
+    getData('tabsData.json')
+    .then(setTabs)
+    .catch((error) => {
+      console.error('Error has occured while gettting data:', error);
+    })
   }, []);
 
   return (

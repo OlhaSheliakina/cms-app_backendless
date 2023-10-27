@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { getData } from '../utils/fetch';
 
 const ProjectsInfo = () => {
   const [projectsData, setProjectsData] = useState([]);
 
   useEffect(() => {
-    fetch('https://olhasheliakina.github.io/cms-app_backendless/data/projectsData.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setProjectsData(data.projectsInfo);
-      })
-      .catch((error) => {
-        console.error('Error has occured while fetching data:', error);
-      });
+    getData('projectsData.json')
+    .then((data) =>{
+      setProjectsData(data.projectsInfo)
+    })
+    .catch((error) => {
+      console.error('Error has occured while gettting data:', error);
+    })
   }, []);
 
   const getStatusClass = (status) => {

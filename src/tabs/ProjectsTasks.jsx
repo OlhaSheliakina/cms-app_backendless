@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
+import { getData } from '../utils/fetch';
 
 const ProjectsTasks = () => {
   const [projectsData, setProjectsData] = useState([]);
 
   useEffect(() => {
-    fetch('https://olhasheliakina.github.io/cms-app_backendless/data/projectsData.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setProjectsData(data.projectsTasks);
-      })
-      .catch((error) => {
-        console.error('Error has occured while fetching data:', error);
-      });
+    getData('projectsData.json')
+    .then((data) =>{
+      setProjectsData(data.projectsTasks)
+    })
+    .catch((error) => {
+      console.error('Error has occured while gettting data:', error);
+    })
   }, []);
+
   return (
     <section className='section is-medium'>
       <h3 className='title has-text-centered'>Projects Tasks</h3>

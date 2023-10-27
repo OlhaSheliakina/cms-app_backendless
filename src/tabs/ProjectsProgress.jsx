@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
+import { getData } from '../utils/fetch';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -8,16 +9,13 @@ const ProjectsProgress = () => {
   const [projectsData, setProjectsData] = useState([]);
 
   useEffect(() => {
-    fetch(
-      'https://olhasheliakina.github.io/cms-app_backendless/data/projectsData.json'
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setProjectsData(data.projectsProgress);
-      })
-      .catch((error) => {
-        console.error('Error has occured while fetching data:', error);
-      });
+    getData('projectsData.json')
+    .then((data) =>{
+      setProjectsData(data.projectsProgress)
+    })
+    .catch((error) => {
+      console.error('Error has occured while gettting data:', error);
+    })
   }, []);
 
   const pieChartData = {
