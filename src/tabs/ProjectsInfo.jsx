@@ -17,21 +17,21 @@ const ProjectsInfo = () => {
   const getStatusClass = (status) => {
     switch (status) {
       case 'In Progress':
-        return 'has-background-warning'; 
+        return 'has-background-danger-light has-text-info'; 
       case 'Completed':
-        return 'has-text-success';
+        return 'has-text-info';
       case 'On Hold':
-        return 'has-text-danger'; 
+        return 'has-text-grey-light'; 
       default:
         return '';
     }
   };
 
   return (
-    <section className='section is-medium has-text-centered'>
+    <section className='section is-medium has-text-centered p-2'>
       <h3 className='title'>Projects Information</h3>
       <div className='table-container pt-6'>
-        <table className='table is-fullwidth'>
+        <table className='table is-fullwidth has-background-info-light'>
           <thead>
             <tr>
               <th className='has-text-centered'>Project Name</th>

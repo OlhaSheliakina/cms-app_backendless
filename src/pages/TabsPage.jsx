@@ -36,7 +36,7 @@ const TabsPage = ({ tabs }) => {
         </ul>
       </div>
 
-      <div className='block'>
+      <div>
         <Suspense fallback={<Loader />}>
           {activeTab && renderLazyComponent(activeTab.id)}
         </Suspense>

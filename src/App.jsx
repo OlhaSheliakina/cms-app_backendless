@@ -25,7 +25,7 @@ const App = () => {
         <Navigation />
       </header>
 
-      <main className='has-text-grey-lighter' style={{ height: '85vh' }}>
+      <main className='has-text-grey-lighter has-background-info-light' style={{ height: '85vh' }}>
           <div className='container'>
             <Routes>
               <Route path='home' element={<HomePage />} />
