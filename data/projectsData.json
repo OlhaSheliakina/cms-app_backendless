@@ -1,87 +1,89 @@
-
-  {
-    "projectsInfo": [
-      {
-        "id": 1,
-        "name": "Project A",
-        "status": "On Hold",
-        "startDate": "2023-02-15",
-        "endDate": "2023-06-30"
-      },
-      {
-        "id": 2,
-        "name": "Project B",
-        "status": "Completed",
-        "startDate": "2023-01-10",
-        "endDate": "2023-03-25"
-      },
-      {
-        "id": 3,
-        "name": "Project C",
-        "status": "In Progress",
-        "startDate": "2023-03-20",
-        "endDate": "2023-11-10"
-      }
-    ],
-    "projectsProgress": [
-      {
-        "id": 1,
-        "name": "Project A",
-        "progress": 15
-      },
-      {
-        "id": 2,
-        "name": "Project B",
-        "progress": 100
-      },
-      {
-        "id": 3,
-        "name": "Project C",
-        "progress": 75
-      }
-    ],
-    "projectsTasks": [
-      {
-        "id": 1,
-        "name": "Task 1",
-        "status": "In Progress",
-        "projectName": "Project C"
-      },
-      {
-        "id": 2,
-        "name": "Task 2",
-        "status": "Completed",
-        "projectName": "Project B"
-      },
-      {
-        "id": 3,
-        "name": "Task 3",
-        "status": "In Progress",
-        "projectName": "Project C"
-      },
-      {
-        "id": 4,
-        "name": "Task 4",
-        "status": "Completed",
-        "projectName": "Project B"
-      },
-      {
-        "id": 5,
-        "name": "Task 5",
-        "status": "In Progress",
-        "projectName": "Project C"
-      },
-      {
-        "id": 6,
-        "name": "Task 6",
-        "status": "Completed",
-        "projectName": "Project C"
-      },
-      {
-        "id": 7,
-        "name": "Task 5",
-        "status": "Completed",
-        "projectName": "Project B"
-      }
-    ]
-  }
+{
+  "projectsInfo": [
+    {
+      "id": 1,
+      "name": "Project A",
+      "status": "On Hold",
+      "startDate": "2023-02-15",
+      "endDate": "2023-06-30"
+    },
+    {
+      "id": 2,
+      "name": "Project B",
+      "status": "Completed",
+      "startDate": "2023-01-10",
+      "endDate": "2023-03-25"
+    },
+    {
+      "id": 3,
+      "name": "Project C",
+      "status": "In Progress",
+      "startDate": "2023-03-20",
+      "endDate": "2023-11-10"
+    }
+  ],
+  "projectsProgress": [
+    {
+      "id": 1,
+      "name": "Project A",
+      "status": "On Hold",
+      "progress": 15
+    },
+    {
+      "id": 2,
+      "name": "Project B",
+      "status": "Completed",
+      "progress": 100
+    },
+    {
+      "id": 3,
+      "name": "Project C",
+      "status": "In Progress",
+      "progress": 75
+        }
+  ],
+  "projectsTasks": [
+    {
+      "id": 1,
+      "name": "Task 1",
+      "status": "In Progress",
+      "projectName": "Project C"
+    },
+    {
+      "id": 2,
+      "name": "Task 2",
+      "status": "Completed",
+      "projectName": "Project B"
+    },
+    {
+      "id": 3,
+      "name": "Task 3",
+      "status": "In Progress",
+      "projectName": "Project C"
+    },
+    {
+      "id": 4,
+      "name": "Task 4",
+      "status": "Completed",
+      "projectName": "Project B"
+    },
+    {
+      "id": 5,
+      "name": "Task 5",
+      "status": "In Progress",
+      "projectName": "Project C"
+    },
+    {
+      "id": 6,
+      "name": "Task 6",
+      "status": "Completed",
+      "projectName": "Project C"
+    },
+    {
+      "id": 7,
+      "name": "Task 5",
+      "status": "Completed",
+      "projectName": "Project B"
+    }
+  ]
+}
