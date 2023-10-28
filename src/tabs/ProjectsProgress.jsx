@@ -30,12 +30,12 @@ const ProjectsProgress = () => {
         label: 'Progress',
         data: projectsData.map((project) => project.progress),
         backgroundColor: [
-          'rgba(200, 200, 200, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
           'rgba(54, 162, 235, 0.2)',
           'rgba(255, 99, 132, 0.2)',
         ],
         borderColor: [
-          'rgba(200, 200, 200, 1)',
+          'rgba(255, 206, 86, 1)', 
           'rgba(54, 162, 235, 1)',
           'rgba(255, 99, 132, 1)',
         ],
@@ -47,7 +47,7 @@ const ProjectsProgress = () => {
   return (
     <section className='section is-medium has-text-centered p-2'>
       <h3 className='title'>Projects Progress</h3>
-      <div style={{ height: '360px' }}>
+      <div style={{ height: '300px' }}>
         <Pie data={pieChartData} options={{ maintainAspectRatio: false }} />
       </div>
     </section>

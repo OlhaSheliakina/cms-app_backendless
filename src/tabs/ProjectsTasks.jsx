@@ -20,19 +20,15 @@ const ProjectsTasks = () => {
       <h3 className='title has-text-centered'>Projects Tasks</h3>
       <ol>
         {projectsData.map((project) => (
-          <div
-            key={project.id}
+            <li key={project.id}
             className={classNames({
               'has-text-info': project.status === 'Completed',
               'has-background-danger-light has-text-info': project.status === 'In Progress',
-            })}
-          >
-            <li key={project.id}>
+            })}>
               <span className='mx-6'>{project.name}</span>
               <span>{project.status}</span>
               <span className='mx-6'>{project.projectName}</span>
             </li>
-          </div>
         ))}
       </ol>
     </section>
