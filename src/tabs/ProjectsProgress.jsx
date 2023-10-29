@@ -14,10 +14,9 @@ const ProjectsProgress = () => {
         setProjectsData(data.projectsProgress);
       })
       .catch((error) => {
-        console.error('Error has occured while gettting data:', error);
+        console.error('Error has occured while getting data:', error);
       });
   }, []);
-  console.log(projectsData.map((project) => project.status));
 
   const pieChartData = {
     labels: projectsData.map(

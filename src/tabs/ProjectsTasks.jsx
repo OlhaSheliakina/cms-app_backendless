@@ -11,7 +11,7 @@ const ProjectsTasks = () => {
       setProjectsData(data.projectsTasks)
     })
     .catch((error) => {
-      console.error('Error has occured while gettting data:', error);
+      console.error('Error has occured while getting data:', error);
     })
   }, []);
 
