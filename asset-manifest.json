@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cms-app_backendless/static/css/main.758bd153.css",
-    "main.js": "/cms-app_backendless/static/js/main.55fa285a.js",
-    "static/js/511.bb19edb8.chunk.js": "/cms-app_backendless/static/js/511.bb19edb8.chunk.js",
-    "static/js/580.d836dcc4.chunk.js": "/cms-app_backendless/static/js/580.d836dcc4.chunk.js",
-    "static/js/505.d9b274af.chunk.js": "/cms-app_backendless/static/js/505.d9b274af.chunk.js",
-    "static/js/77.ccd62aaa.chunk.js": "/cms-app_backendless/static/js/77.ccd62aaa.chunk.js",
+    "main.css": "/cms-app_backendless/static/css/main.cb5e407d.css",
+    "main.js": "/cms-app_backendless/static/js/main.27547252.js",
+    "static/js/521.f69620a9.chunk.js": "/cms-app_backendless/static/js/521.f69620a9.chunk.js",
+    "static/js/562.18bf8ab0.chunk.js": "/cms-app_backendless/static/js/562.18bf8ab0.chunk.js",
+    "static/js/34.8c13e48a.chunk.js": "/cms-app_backendless/static/js/34.8c13e48a.chunk.js",
+    "static/js/658.12e02fab.chunk.js": "/cms-app_backendless/static/js/658.12e02fab.chunk.js",
     "index.html": "/cms-app_backendless/index.html",
-    "main.758bd153.css.map": "/cms-app_backendless/static/css/main.758bd153.css.map",
-    "main.55fa285a.js.map": "/cms-app_backendless/static/js/main.55fa285a.js.map",
-    "511.bb19edb8.chunk.js.map": "/cms-app_backendless/static/js/511.bb19edb8.chunk.js.map",
-    "580.d836dcc4.chunk.js.map": "/cms-app_backendless/static/js/580.d836dcc4.chunk.js.map",
-    "505.d9b274af.chunk.js.map": "/cms-app_backendless/static/js/505.d9b274af.chunk.js.map",
-    "77.ccd62aaa.chunk.js.map": "/cms-app_backendless/static/js/77.ccd62aaa.chunk.js.map"
+    "main.cb5e407d.css.map": "/cms-app_backendless/static/css/main.cb5e407d.css.map",
+    "main.27547252.js.map": "/cms-app_backendless/static/js/main.27547252.js.map",
+    "521.f69620a9.chunk.js.map": "/cms-app_backendless/static/js/521.f69620a9.chunk.js.map",
+    "562.18bf8ab0.chunk.js.map": "/cms-app_backendless/static/js/562.18bf8ab0.chunk.js.map",
+    "34.8c13e48a.chunk.js.map": "/cms-app_backendless/static/js/34.8c13e48a.chunk.js.map",
+    "658.12e02fab.chunk.js.map": "/cms-app_backendless/static/js/658.12e02fab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.758bd153.css",
-    "static/js/main.55fa285a.js"
+    "static/css/main.cb5e407d.css",
+    "static/js/main.27547252.js"
   ]
 }
