@@ -1,4 +1,3 @@
-import 'bulma/css/bulma.css';
 import React, { useEffect, useState } from 'react';
 import Navigation from './components/Navigation';
 import { Routes, Route, Navigate } from 'react-router-dom';
